@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 800px;
+	margin: 0;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 300px;
+	height: 100px;
+	background-image: url(/login.png);
+	background-size: cover;
+	/* background-color: aqua; */
+}
+
+.main {
+	background-color: aliceblue;
+	border-radius: 5px;
+	box-shadow: 10px 20px 15px rgba(0, 0, 0, .3);
+	/*	overflow: hidden;*/
+	max-width: 100%;
+	width: 400px;
+}
+
+.header {
+	border-bottom: 1px solid #FFFFFF;
+	background-color: beige;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+	text-align: center;
+}
+
+.form {
+	padding: 30px 40px;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px #9A9A9A;
+	border-radius: 5px;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input :focus {
+	outline: none;
+	border-color: black;
+}
+
+.form-control.success input :focus {
+	border-color: lawngreen;
+	visibility: visible;
+}
+
+.form-control.error input :focus {
+	border-color: red;
+	visibility: visible;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: lawngreen;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: red;
+	visibility: visible;
+}
+
+.form-control small {
+	color: red;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: beige;
+	border: none;
+	color: black;
+	display: block;
+	font-size: 16px;
+	width: 50%;
+	margin-left: 150px;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.form button a {
+	text-decoration: none;
+	color: black;
+}
